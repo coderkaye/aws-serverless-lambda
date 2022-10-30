@@ -33,8 +33,8 @@ provider:
   profile: serverless_user
   apiName: serverless-service
   apiGateway:
-    restApiId: "serverless-service-gateway"
-    #restApiRootResourceId:
+    restApiId: "serverless-service-restapi"
+    restApiRootResourceId: "serverless-service-restapi-root"
     #  "Fn::ImportValue": "${self:custom.appConfig.GatewayRootId}"
 
 # you can overwrite defaults here
