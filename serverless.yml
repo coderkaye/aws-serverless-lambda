@@ -24,6 +24,7 @@ provider:
   name: aws
   runtime: nodejs12.x
   profile: serverless_user
+  apiName: serverless-service
 
 # you can overwrite defaults here
   stage: dev

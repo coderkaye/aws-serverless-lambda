@@ -8,7 +8,7 @@ const Responses = {
             },
             statusCode: 200,
             body: JSON.stringify(data)
-        }
+        };
     },
 
     _400(data ={}){
@@ -20,8 +20,8 @@ const Responses = {
             },
             statusCode: 400,
             body: JSON.stringify(data)
-        }
+        };
     }
-}
+};
 
 module.export = Responses;
