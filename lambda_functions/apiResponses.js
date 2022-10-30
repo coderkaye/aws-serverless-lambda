@@ -4,8 +4,8 @@ const Responses = {
             headers:{
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Methods': '*',
-                'Access-Control-Allow-Origin': '*'
-            }
+                'Access-Control-Allow-Origin': '*',
+            },
             statusCode: 200,
             body: JSON.stringify(data)
         }
@@ -16,8 +16,8 @@ const Responses = {
             headers:{
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Methods': '*',
-                'Access-Control-Allow-Origin': '*'
-            }
+                'Access-Control-Allow-Origin': '*',
+            },
             statusCode: 400,
             body: JSON.stringify(data)
         }

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "serverless-aws-alias": "^1.8.0",
+    "serverless-plugin-canary-deployments": "^0.8.0"
+  },
+  "devDependencies": {
+    "serverless-s3-sync": "^3.1.0"
+  }
+}
