@@ -21,7 +21,7 @@ const Responses = {
             statusCode: 400,
             body: JSON.stringify(data)
         };
-    }
+    },
 };
 
 module.export = Responses;
