@@ -12,7 +12,7 @@ exports.handler = async event => {
     
     if(data[ID]){
         //return the data
-        return Responses._200({data[ID]});
+        return Responses._200(data[ID]);
     }
 
     //failed as ID not in the data

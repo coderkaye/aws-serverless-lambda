@@ -20,11 +20,22 @@ service: serverlessserviceproject
 # Check out our docs for more details
 frameworkVersion: '3'
 
+custom:
+  stage: ${opt:stage, 'dev'}
+  appConfig: ${file(configs/${self:custom.stage}.json)}
+  s3Sync:
+    - bucketName: sample-bucket-kayealvarado
+      localDir: UploadData
+
 provider:
   name: aws
   runtime: nodejs12.x
   profile: serverless_user
   apiName: serverless-service
+  apiGateway:
+    restApiId: "serverless-service-gateway"
+    #restApiRootResourceId:
+    #  "Fn::ImportValue": "${self:custom.appConfig.GatewayRootId}"
 
 # you can overwrite defaults here
   stage: dev
@@ -36,10 +47,7 @@ plugins:
 #  - serverless-plugin-canary-deployments
 #  - serverless-aws-alias
 
-custom:
-  s3Sync:
-    - bucketName: sample-bucket-kayealvarado
-      localDir: UploadData
+
 
 
 
